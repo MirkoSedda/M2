@@ -42,3 +42,9 @@ body > .container > :nth-child(2) > nav > :nth-child(even) {
 }
 
 /* ex 6 */
+
+main > .row > div > :nth-child(3) {
+  background-color: yellow;
+}
+
+/* ex 7 */
