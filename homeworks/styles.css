@@ -18,3 +18,9 @@ body > .container > :nth-child(3) > div > h1 {
 }
 
 /* ex 2 */
+
+body > .container > header > div > div > a {
+  background-color: coral;
+}
+
+/* ex 3 */
