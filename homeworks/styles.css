@@ -48,3 +48,9 @@ main > .row > div > :nth-child(3) {
 }
 
 /* ex 7 */
+
+aside > div:nth-of-type(2) > ol > li {
+  background-color: teal;
+}
+
+/* ex 8  */
