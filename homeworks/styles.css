@@ -64,3 +64,9 @@ main > .row > div > :nth-child(3) > :nth-child(2) > a {
 body > :nth-last-child(3) > :nth-child(2) > a {
   background-color: cornflowerblue;
 }
+
+/* ex 10 */
+
+body > :nth-last-child(3) {
+  background-color: darkmagenta;
+}
