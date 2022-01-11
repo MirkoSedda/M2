@@ -24,3 +24,15 @@ body > .container > header > div > div > a {
 }
 
 /* ex 3 */
+
+body > .container > :nth-child(3) > div > :last-child {
+  background-color: blue;
+}
+
+/* ex 4 */
+
+main > .row > div > div:first-of-type {
+  background-color: salmon;
+}
+
+/* ex 5 */
