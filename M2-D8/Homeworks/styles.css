@@ -22,7 +22,6 @@ navbar-container {
   align-items: center;
   height: 400px;
   width: 600px;
-  background-color: grey;
 }
 .back {
   height: 100%;
@@ -32,7 +31,7 @@ navbar-container {
 }
 
 .back1 {
-  border-right: 1px solid #000000;
+  border-right: 1.2px solid #000000;
   align-items: center;
   background-color: green;
   border-top-left-radius: 50px;
@@ -56,7 +55,7 @@ navbar-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 33%;
+  height: 33.3%;
 }
 
 .mini-col1 {
