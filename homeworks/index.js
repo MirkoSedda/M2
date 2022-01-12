@@ -1,6 +1,5 @@
 /*
 
-EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
 EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
 EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
 EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
@@ -81,31 +80,24 @@ const removeSearch = () => {
 
 removeSearch()
 
-// ---------------------------
+//EX17 Write a function to trim just the first 50 characters in the first paragraph for each blog post
 
-const blogPostOne = document.querySelector(
-  'main > :first-child > :first-child > div > :nth-child(3)'
+const blogPost1 = document.querySelector(
+  'main > .row > :first-child > :nth-child(2) > :nth-child(5)'
 )
-const blogPostTwo = document.querySelector(
-  'main > :first-child > :first-child > :nth-child(2) > :nth-child(3)'
+
+const blogPost2 = document.querySelector(
+  'main > .row > div > div:nth-child(3) > p:nth-child(3)'
 )
-const blogPostThree = document.querySelector(
-  'main > :first-child > :first-child > :nth-child(3) > :nth-child(3)'
-)
-const disabledBtn = document.querySelector('aside')
 
 const removeCharacters = () => {
-  console.log(blogPostOne)
-  console.log(blogPostTwo)
-  let str1 = blogPostOne.innerText
-  let str2 = blogPostTwo.innerText
-  let str3 = blogPostThree.innerText
-  console.log(str1)
-  console.log(str2)
-  str1.substring(50)
-  str2.substring(50)
-  str3.substring(50)
+  const postContent = blogPost1.innerText
+  const shorterContent = postContent.substring(50)
+  blogPost1.innerText = shorterContent
 
-  console.log(str1)
-  console.log(str2)
+  const postContent2 = blogPost2.innerText
+  const shorterContent2 = postContent2.substring(50)
+  blogPost2.innerText = shorterContent2
 }
+
+removeCharacters()
