@@ -1,71 +1,58 @@
-/*
-            EX1) Write a selector to target the h1 in jumbotron
-            EX2) Write a selector to target every children of the navbar
-            EX3) Write a selector to target the "continue reading..." inside the jumbotron
-            EX4) Write a selector to target the first blogpost
-            EX5) Write a selector to target the "even" links in the navbar
-            EX6) Write a selector to target the last blog post
-            EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )
-            EX8) Write a selector to target the second post author
-            EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
-            EX10) Write a selector to target the footer
-        */
-
-/* ex 1 */
+/* ex 1 Write a selector to target the h1 in jumbotron*/
 
 body > .container > :nth-child(3) > div > h1 {
   background-color: red;
 }
 
-/* ex 2 */
+/* ex 2 Write a selector to target every children of the navbar*/
 
 body > .container > header > div > div > a {
   background-color: coral;
 }
 
-/* ex 3 */
+/* ex 3 Write a selector to target the "continue reading..." inside the jumbotron*/
 
 body > .container > :nth-child(3) > div > :last-child {
   background-color: blue;
 }
 
-/* ex 4 */
+/* ex 4 Write a selector to target the first blogpost*/
 
 main > .row > div > div:first-of-type {
   background-color: salmon;
 }
 
-/* ex 5 */
+/* ex 5 Write a selector to target the "even" links in the navbar*/
 
 body > .container > :nth-child(2) > nav > :nth-child(even) {
   background-color: green;
 }
 
-/* ex 6 */
+/* ex 6 Write a selector to target the last blog post*/
 
 main > .row > div > :nth-child(3) {
   background-color: yellow;
 }
 
-/* ex 7 */
+/* ex 7 Write a selector to target all the li into the first ordered-list in the sidebar ( Archives )*/
 
 aside > div:nth-of-type(2) > ol > li {
   background-color: teal;
 }
 
-/* ex 8  */
+/* ex 8  Write a selector to target the second post author*/
 
 main > .row > div > :nth-child(3) > :nth-child(2) > a {
   background-color: gray;
 }
 
-/* ex 9  */
+/* ex 9  Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly*/
 
 body > :nth-last-child(3) > :nth-child(2) > a {
   background-color: cornflowerblue;
 }
 
-/* ex 10 */
+/* ex 10 Write a selector to target the footer*/
 
 body > :nth-last-child(3) {
   background-color: darkmagenta;
