@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Landing page</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+      <!-- Exercise 1 -->
+
+      <section>
+        <h1 class="display-4 text-muted text-center mb-5">Exercise 1</h1>
+        <p class="lead text-center mt-5 mb-5">
+          Recreate this table just using bs4 classes or styling without adding
+          removing any dom element.
+        </p>
+        <div class="row">
+          <div
+            class="col-xs-12 col-md-6 bg-success d-flex align-items-center justify-content-center text-light first-column"
+          >
+            First Column Height 400px; Green-ish background Text centered
+          </div>
+          <div
+            class="col-xs-12 col-md-2 bg-primary d-flex flex-column justify-content-end text-light second-column"
+          >
+            Second Column Text to the bottom Bold , bluish
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="row h-100">
+              <div
+                class="col-sm-12 d-flex align-items-center justify-content-center third-column-first-row"
+              >
+                Third Column Part 1
+              </div>
+              <div
+                class="col-sm-12 d-flex align-items-center justify-content-center third-column-second-row"
+              >
+                Third Column Part 2
+              </div>
+              <div
+                class="col-sm-12 d-flex align-items-center justify-content-center third-column-third-row"
+              >
+                Third Column Part 3
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 2 -->
+
+      <section>
+        <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 2</h1>
+        <p class="lead text-center mt-5 mb-5">
+          Create a pricing table to sell your product!
+        </p>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="card text-center">
+              <h5 class="card-header">Featured</h5>
+              <div class="card-body">
+                <h1 class="card-title display-6 text-center mb-5 mt-5">
+                  0€ <span class="text-muted">/ mo</span>
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-bottom-0 text-center">
+                    10 users incldued
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    2 GB of storage
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    Email support
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    Help center access
+                  </li>
+                </ul>
+                <button class="btn btn-outline-primary w-100">
+                  Sign up for free
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card text-center">
+              <h5 class="card-header">Pro</h5>
+              <div class="card-body">
+                <h1 class="card-title display-6 text-center mb-5 mt-5">
+                  15€ <span class="text-muted">/ mo</span>
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-bottom-0 text-center">
+                    20 users included
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    10 GB of storage
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    Priority email support
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    Help center access
+                  </li>
+                </ul>
+                <button class="btn btn-primary w-100">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card text-center">
+              <h5 class="card-header">Enterprise</h5>
+              <div class="card-body">
+                <h1 class="card-title display-6 text-center mb-5 mt-5">
+                  29€ <span class="text-muted">/ mo</span>
+                </h1>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-bottom-0 text-center">
+                    30 users incldued
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    15 GB of storage
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    Phone and email support
+                  </li>
+                  <li class="list-group-item border-bottom-0 text-center">
+                    Help center access
+                  </li>
+                </ul>
+                <button class="btn btn-primary w-100">Contact us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 3 -->
+
+      <section>
+        <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 3</h1>
+        <p class="lead text-center mt-5 mb-5">
+          And this could be the video part of your website!
+        </p>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mb-5">
+            <div class="card">
+              <img
+                src="http://placehold.it/300"
+                alt="card-img"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusamus alias eius provident maiores sapiente repellat
+                  officia. Facilis laborum mollitia inventore?
+                </p>
+              </div>
+              <div
+                class="card-body d-flex align-items-center justify-content-between"
+              >
+                <div class="btn-group btn-group-sm me-2">
+                  <button class="btn btn-outline-secondary">View</button>
+                  <button class="btn btn-outline-secondary">Edit</button>
+                </div>
+                <span class="text-muted">3 mins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 4 -->
+      <section>
+        <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 4</h1>
+        <p class="lead text-center mt-5 mb-5">
+          Structure this section as a blog.
+        </p>
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <div class="d-flex">
+              <h1 class="ms-5">Page Heading</h1>
+              <h5 class="display-5 mt-3" style="margin-left: 20px">
+                Secondary Text
+              </h5>
+            </div>
+            <div class="card mt-5 mb-5">
+              <img
+                src="http://placehold.it/750x300"
+                alt="blog-img-cover"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Post Title</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum assumenda, debitis voluptatibus nobis pariatur minima
+                  blanditiis officia ratione nesciunt ad!
+                </p>
+                <a href="#" class="btn-btn primary"> Read More</a>
+              </div>
+              <div class="card-footer">
+                Posted on Jan 1 , 2021 by <a href="#">Admin</a>
+              </div>
+            </div>
+            <div class="card mt-5 mb-5">
+              <img
+                src="http://placehold.it/750x300"
+                alt="blog-img-cover"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Post Title</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum assumenda, debitis voluptatibus nobis pariatur minima
+                  blanditiis officia ratione nesciunt ad!
+                </p>
+                <a href="#" class="btn-btn primary"> Read More</a>
+              </div>
+              <div class="card-footer">
+                Posted on Jan 1 , 2021 by <a href="#">Admin</a>
+              </div>
+            </div>
+            <div class="card mt-5 mb-5">
+              <img
+                src="http://placehold.it/750x300"
+                alt="blog-img-cover"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Post Title</h2>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Harum assumenda, debitis voluptatibus nobis pariatur minima
+                  blanditiis officia ratione nesciunt ad!
+                </p>
+                <a href="#" class="btn-btn primary"> Read More</a>
+              </div>
+              <div class="card-footer">
+                Posted on Jan 1 , 2021 by <a href="#">Admin</a>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-center mb-5 mt-5"
+            >
+              <nav>
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a href="#" class="page-link">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-left"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                        />
+                      </svg>
+                      Older
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#" class="page-link text-secondary">
+                      Newer
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-right"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="card mb-5">
+              <div class="card-header">
+                <h5>Find in my blog</h5>
+              </div>
+              <div class="card-body">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" />
+                  <button class="btn btn-secondary">Search</button>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5">
+              <div class="card-header">
+                <h5>Categories</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <a href="" class="text-primary d-block">Web Design</a>
+                    <a href="" class="text-primary d-block">HTML</a>
+                    <a href="" class="text-primary d-block">CSS</a>
+                  </div>
+                  <div class="col">
+                    <a href="" class="text-primary d-block">Javascript</a>
+                    <a href="" class="text-primary d-block">SAAS</a>
+                    <a href="" class="text-primary d-block">Bootstrap</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-5">
+              <div class="card-header">
+                <h5>Categories</h5>
+              </div>
+              <div class="card-body">
+                Usually here you can put all your custom widget.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 5 -->
+      <section class="mb-5">
+        <h1 class="display-4 text-muted text-center mb-5 mt-5">Exercise 5</h1>
+        <p class="lead text-center mt-5 mb-5">
+          Footer time! Never underestimate the power of the footers 😎
+        </p>
+        <hr class="mb-5 mt-5" />
+        <footer>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <h5>Features</h5>
+              <div class="d-flex flex-column">
+                <a href="#" class="text-muted">Cool stuff</a>
+                <a href="#" class="text-muted">Random feature</a>
+                <a href="#" class="text-muted">Team feature</a>
+                <a href="#" class="text-muted">Stuff for developers</a>
+                <a href="#" class="text-muted">Last feature</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h5>Resources</h5>
+              <div class="d-flex flex-column">
+                <a href="#" class="text-muted">Cool stuff</a>
+                <a href="#" class="text-muted">Resource</a>
+                <a href="#" class="text-muted">Resource name</a>
+                <a href="#" class="text-muted">Another resource</a>
+                <a href="#" class="text-muted">Final resource</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h5>About</h5>
+              <div class="d-flex flex-column">
+                <a href="#" class="text-muted">Team</a>
+                <a href="#" class="text-muted">Locations</a>
+                <a href="#" class="text-muted">Privacy</a>
+                <a href="#" class="text-muted">Terms</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

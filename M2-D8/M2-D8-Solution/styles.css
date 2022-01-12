@@ -1,0 +1,33 @@
+.first-column {
+  height: 400px;
+  padding: 15%;
+  text-align: center;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: 2px solid black;
+}
+
+.second-column {
+  padding-bottom: 5%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.third-column-first-row {
+  border-top-right-radius: 50px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  background-color: rgb(245, 245, 158);
+}
+
+.third-column-second-row {
+  border-right: 2px solid black;
+  background-color: rgb(247, 247, 78);
+}
+
+.third-column-third-row {
+  border-bottom-right-radius: 50px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  background-color: rgb(245, 245, 0);
+}
