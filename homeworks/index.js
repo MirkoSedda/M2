@@ -1,6 +1,6 @@
 /*
 
-EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+
 */
 
 // EX11 Write a function to add a new link into the navbar
@@ -152,3 +152,15 @@ const removeBlogPost = () => {
 }
 
 olderBtn.addEventListener('click', removeBlogPost)
+
+//EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
+
+const addAlertHoverAuthor = () => {
+  const authors = document.querySelectorAll('.blog-post-meta > a')
+
+  for (i = 0; i < authors.length; i++) {
+    const authorName = authors[i].innerText
+    authors[i].addEventListener('mouseover', () => alert(authorName))
+  }
+}
+addAlertHoverAuthor()
