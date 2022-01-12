@@ -1,6 +1,5 @@
 /*
 
-EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
 EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
 */
 
@@ -111,7 +110,7 @@ const blogsPostsContainer = document.querySelector('.blog-main')
 
 const addBlogPost = () => {
   blogsPostsContainer.innerHTML += `        
-         <div class="blog-post">
+         <div class="js-blog-post">
             <h2 class="blog-post-title">I'm another blog post created by JS</h2>
             <p class="blog-post-meta">
               December 23, 2013 by <a href="#">Jacob</a>
@@ -141,4 +140,15 @@ const addBlogPost = () => {
           </div>`
 }
 
-newerBtn.addEventListener('click', addBlogPost())
+newerBtn.addEventListener('click', addBlogPost)
+
+//EX19 Write a function and attach it to the "Older" button, to remove the last Blog Post
+
+const olderBtn = document.querySelector('.blog-pagination > :first-child')
+
+const removeBlogPost = () => {
+  const lastBlogPost = document.querySelector('.blog-post:last-of-type')
+  lastBlogPost.remove()
+}
+
+olderBtn.addEventListener('click', removeBlogPost)
