@@ -69,3 +69,63 @@ navbar-container {
   border-bottom-right-radius: 50px;
   background-color: greenyellow;
 }
+
+.navbar {
+  background-color: rgb(38, 114, 255);
+  padding-left: 275px;
+}
+
+.free {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border: 1px solid rgb(204, 203, 203);
+}
+
+.aa {
+  font-weight: 200;
+}
+.card-title {
+  font-size: 30px;
+}
+.card-body {
+  text-align: center;
+}
+.utn {
+  height: auto;
+  color: rgb(38, 114, 255);
+  text-decoration: none;
+}
+
+.utn2 {
+  height: auto;
+  color: white;
+  text-decoration: none;
+}
+
+.bord {
+  width: 100%;
+  border: 1px solid rgb(38, 114, 255);
+}
+
+.bord2 {
+  width: 100%;
+  border: 1px solid rgb(38, 114, 255);
+  background-color: rgb(38, 114, 255);
+}
+
+.ex2 {
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-right: 10px;
+}
+
+footer {
+  border-top: 1px solid rgb(180, 180, 180);
+  padding: 20px 0;
+  width: 60%;
+}
