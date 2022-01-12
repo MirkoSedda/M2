@@ -1,13 +1,13 @@
 /* ex 1 Write a selector to target the h1 in jumbotron*/
 
 body > .container > :nth-child(3) > div > h1 {
-  background-color: red;
+  background-color: darkgray;
 }
 
 /* ex 2 Write a selector to target every children of the navbar*/
 
 body > .container > header > div > div > a {
-  background-color: coral;
+  background-color: lightblue;
 }
 
 /* ex 3 Write a selector to target the "continue reading..." inside the jumbotron*/
@@ -25,7 +25,7 @@ main > .row > div > div:first-of-type {
 /* ex 5 Write a selector to target the "even" links in the navbar*/
 
 body > .container > :nth-child(2) > nav > :nth-child(even) {
-  background-color: green;
+  background-color: lightgoldenrodyellow;
 }
 
 /* ex 6 Write a selector to target the last blog post*/

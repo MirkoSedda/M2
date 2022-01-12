@@ -1,7 +1,5 @@
 /*
-EX12) Write a function to change the color of the main title
-EX13) Write a function to change the background of the jumbotron
-EX14) Write a function to remove all the links under "Elsewhere"
+
 EX15) Write a function to change the column size for heading in jumbotron
 EX16) Write a function to remove the "Search" magnifying glass icon
 EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
@@ -21,14 +19,58 @@ const addLink = () => {
 }
 addLink()
 
+//EX12 Write a function to change the color of the main title
+
 const title = document.querySelector(
   'body > :first-child > :nth-child(3) > div > h1'
 )
-const continueText = document.querySelector('body > .container > :nth-child(3)')
+
+const changeTitleColor = () => {
+  title.style.color = 'lightblue'
+}
+
+changeTitleColor()
+
+//EX13 Write a function to change the background of the jumbotron
+
+const jumbotron = document.querySelector('body > .container > :nth-child(3)')
 const evenNav = document.querySelector(
   'body > :first-child > :nth-child(2) > nav > :nth-child(even)'
 )
+
+const changeBgColor = () => {
+  jumbotron.innerHTML = ` 
+      <div class="jumbotron p-4 p-md-5 text-white rounded bg-pink">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">
+            Title of a longer featured blog post
+          </h1>
+          <p class="lead my-3">
+            Multiple lines of text that form the lede, informing new readers
+            quickly and efficiently about what’s most interesting in this post’s
+            contents.
+          </p>
+          <p class="lead mb-0">
+            <a href="#" class="text-white font-weight-bold"
+              >Continue reading...</a
+            >
+          </p>
+        </div>
+      </div>`
+}
+changeBgColor()
+
+//EX14 Write a function to remove all the links under "Elsewhere"
+
 const elseLinks = document.querySelector('aside > div:nth-of-type(3) > ol > li')
+
+const removeLinks = () => {
+  const elseLinks = document.querySelector('aside > div:nth-of-type(3) > ol')
+  elseLinks.innerHTML = ''
+}
+removeLinks()
+
+// ---------------------------
 const jumboCol = document.querySelector(
   'body > :first-child > :nth-child(3) > div'
 )
@@ -45,26 +87,6 @@ const blogPostThree = document.querySelector(
   'main > :first-child > :first-child > :nth-child(3) > :nth-child(3)'
 )
 const disabledBtn = document.querySelector('aside')
-//console.log(continueText)
-// console.log(title)
-// console.log(navbar)
-
-const changeTitleColor = () => {
-  console.log('works')
-  title.classList.toggle('red-color')
-  // title.style.color = 'red'
-}
-
-const changeBgColor = () => {
-  console.log('working')
-  continueText.classList.remove('bg-dark')
-  continueText.classList.add('red')
-}
-
-const removeLinks = () => {
-  const elseLinks = document.querySelector('aside > div:nth-of-type(3) > ol')
-  elseLinks.remove()
-}
 
 const changeSize = () => {
   continueText.classList.remove('col-md-6')
