@@ -1,6 +1,5 @@
 /*
 
-EX16) Write a function to remove the "Search" magnifying glass icon
 EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
 EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
 EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
@@ -70,11 +69,20 @@ const removeLinks = () => {
 }
 removeLinks()
 
-// ---------------------------
+//EX16 Write a function to remove the "Search" magnifying glass icon
 
 const svgIcon = document.querySelector(
   'body > :first-child > header > .row > :nth-child(3) > a > svg'
 )
+
+const removeSearch = () => {
+  svgIcon.style.display = 'none'
+}
+
+removeSearch()
+
+// ---------------------------
+
 const blogPostOne = document.querySelector(
   'main > :first-child > :first-child > div > :nth-child(3)'
 )
@@ -85,10 +93,6 @@ const blogPostThree = document.querySelector(
   'main > :first-child > :first-child > :nth-child(3) > :nth-child(3)'
 )
 const disabledBtn = document.querySelector('aside')
-
-const removeSearch = () => {
-  svgIcon.style.display = 'none'
-}
 
 const removeCharacters = () => {
   console.log(blogPostOne)
