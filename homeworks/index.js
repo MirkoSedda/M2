@@ -1,6 +1,5 @@
 /*
 
-EX15) Write a function to change the column size for heading in jumbotron
 EX16) Write a function to remove the "Search" magnifying glass icon
 EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
 EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
@@ -32,16 +31,17 @@ const changeTitleColor = () => {
 changeTitleColor()
 
 //EX13 Write a function to change the background of the jumbotron
+//EX15 Write a function to change the column size for heading in jumbotron
 
 const jumbotron = document.querySelector('body > .container > :nth-child(3)')
 const evenNav = document.querySelector(
   'body > :first-child > :nth-child(2) > nav > :nth-child(even)'
 )
 
-const changeBgColor = () => {
+const changeBgColorAndColWidth = () => {
   jumbotron.innerHTML = ` 
       <div class="jumbotron p-4 p-md-5 text-white rounded bg-pink">
-        <div class="col-md-6 px-0">
+        <div class="col-md-12 px-0">
           <h1 class="display-4 font-italic">
             Title of a longer featured blog post
           </h1>
@@ -58,7 +58,7 @@ const changeBgColor = () => {
         </div>
       </div>`
 }
-changeBgColor()
+changeBgColorAndColWidth()
 
 //EX14 Write a function to remove all the links under "Elsewhere"
 
@@ -71,9 +71,7 @@ const removeLinks = () => {
 removeLinks()
 
 // ---------------------------
-const jumboCol = document.querySelector(
-  'body > :first-child > :nth-child(3) > div'
-)
+
 const svgIcon = document.querySelector(
   'body > :first-child > header > .row > :nth-child(3) > a > svg'
 )
@@ -87,11 +85,6 @@ const blogPostThree = document.querySelector(
   'main > :first-child > :first-child > :nth-child(3) > :nth-child(3)'
 )
 const disabledBtn = document.querySelector('aside')
-
-const changeSize = () => {
-  continueText.classList.remove('col-md-6')
-  continueText.classList.add('col-md-4')
-}
 
 const removeSearch = () => {
   svgIcon.style.display = 'none'
