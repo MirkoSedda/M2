@@ -108,18 +108,11 @@ const newerBtn = document.querySelector('.blog-pagination > :last-child')
 const newBtn = (newerBtn.classList = 'btn btn-outline-primary')
 
 const blogsPostsContainer = document.querySelector('.blog-main')
-console.log(blogsPostsContainer)
 
 const addBlogPost = () => {
-  //blogMain
-}
-
-//newBtn.addEventListener('click', addBlogPost)
-/*
-
-
-`         <div class="blog-post">
-            <h2 class="blog-post-title">Another blog post</h2>
+  blogsPostsContainer.innerHTML += `        
+         <div class="blog-post">
+            <h2 class="blog-post-title">I'm another blog post created by JS</h2>
             <p class="blog-post-meta">
               December 23, 2013 by <a href="#">Jacob</a>
             </p>
@@ -127,27 +120,25 @@ const addBlogPost = () => {
             <p>
               Cum sociis natoque penatibus et magnis
               <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
-              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-              vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
-              consectetur purus sit amet fermentum.
+              Aenean eu leo quam. 
             </p>
             <blockquote>
               <p>
                 Curabitur blandit tempus porttitor.
                 <strong>Nullam quis risus eget urna mollis</strong> ornare vel
-                eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                eu leo. 
               </p>
             </blockquote>
             <p>
               Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras
-              mattis consectetur purus sit amet fermentum. Aenean lacinia
-              bibendum nulla sed consectetur.
+              mattis consectetur purus sit amet fermentum. 
             </p>
             <p>
               Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
               auctor. Duis mollis, est non commodo luctus, nisi erat porttitor
-              ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
+              ligula, eget lacinia odio sem nec elit.
             </p>
           </div>`
-*/
+}
+
+newerBtn.addEventListener('click', addBlogPost())
