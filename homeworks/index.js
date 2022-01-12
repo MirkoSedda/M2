@@ -1,6 +1,5 @@
 /*
 
-EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
 EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
 EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
 */
@@ -88,6 +87,7 @@ const blogPost1 = document.querySelector(
 
 const blogPost2 = document.querySelector(
   'main > .row > div > div:nth-child(3) > p:nth-child(3)'
+  //'main > .row > :first-child > :nth-child(3) > :nth-child(3)'
 )
 
 const removeCharacters = () => {
@@ -101,3 +101,53 @@ const removeCharacters = () => {
 }
 
 removeCharacters()
+
+//EX18 Write a function and attach it to the "Newer" button, to add new Blog Post
+
+const newerBtn = document.querySelector('.blog-pagination > :last-child')
+const newBtn = (newerBtn.classList = 'btn btn-outline-primary')
+
+const blogsPostsContainer = document.querySelector('.blog-main')
+console.log(blogsPostsContainer)
+
+const addBlogPost = () => {
+  //blogMain
+}
+
+//newBtn.addEventListener('click', addBlogPost)
+/*
+
+
+`         <div class="blog-post">
+            <h2 class="blog-post-title">Another blog post</h2>
+            <p class="blog-post-meta">
+              December 23, 2013 by <a href="#">Jacob</a>
+            </p>
+
+            <p>
+              Cum sociis natoque penatibus et magnis
+              <a href="#">dis parturient montes</a>, nascetur ridiculus mus.
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+              vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
+              consectetur purus sit amet fermentum.
+            </p>
+            <blockquote>
+              <p>
+                Curabitur blandit tempus porttitor.
+                <strong>Nullam quis risus eget urna mollis</strong> ornare vel
+                eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              </p>
+            </blockquote>
+            <p>
+              Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras
+              mattis consectetur purus sit amet fermentum. Aenean lacinia
+              bibendum nulla sed consectetur.
+            </p>
+            <p>
+              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor. Duis mollis, est non commodo luctus, nisi erat porttitor
+              ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
+              consectetur ac, vestibulum at eros.
+            </p>
+          </div>`
+*/
