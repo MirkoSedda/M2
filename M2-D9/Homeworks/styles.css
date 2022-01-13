@@ -104,6 +104,10 @@ footer a {
   left: -1px;
 }
 
+tr:hover .btn-sm {
+  display: block !important;
+}
+
 /* Animations */
 
 .fade-in {
