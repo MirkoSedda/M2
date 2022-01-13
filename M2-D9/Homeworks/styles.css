@@ -1,3 +1,101 @@
-h1 {
-  color: red;
+body {
+  background: linear-gradient(
+    45deg,
+    rgba(37, 0, 64, 1) 0%,
+    rgba(67, 88, 116, 1) 100%
+  );
+  background-attachment: fixed;
+  color: white;
+}
+
+section {
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.album-container {
+  text-align: center;
+  padding-bottom: 1em;
+  margin: 1em;
+}
+
+.album-container img {
+  width: 100%;
+}
+
+.album-artist:after {
+  content: ' • ';
+}
+
+.album-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  font-size: 1.3em;
+}
+
+.album-genre {
+}
+
+nav {
+  background-color: rgba(26, 16, 34, 0.72);
+  height: 7vh;
+}
+
+.carousel-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: lowercase;
+  color: #d1d1d1;
+  mix-blend-mode: color-burn;
+  font-weight: 900;
+}
+
+.album-tapestry {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.squared {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+.toggle-btn {
+  width: 100px;
+  position: sticky;
+  top: 5em;
+  right: 5em;
+  margin-left: auto;
+  margin-top: 3em;
+  z-index: 1;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.insta-btn {
+  padding: 15px 45px;
+  border: none;
+  border-radius: 16px;
+  background-color: deeppink;
+  color: white;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+
+.insta-btn:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 20, 147, 0.71));
+  background-color: #eb2c94;
+}
+
+.carousel img {
+  min-height: 93vh;
 }
