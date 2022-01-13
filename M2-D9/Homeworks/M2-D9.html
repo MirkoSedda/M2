@@ -1,12 +1,3 @@
-<!-- EXERCISE 5
-        Add a DELETE bootstrap button at the end of each row of the tracklist. 
-        Attach the functionality to remove its row when it gets clicked. (Requires DOM manipulation)  
-
-        ## EXTRA CSS CHALLENGE ##
-        Make only one button visible at a time, for each row, when the single row gets hovered. 
-        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
-    -->
-
 <!-- EXERCISE 6
         Add an "Add Track" button under the tracklist of the album. 
         It should have a nice shadow transition when its hovered (with the box-shadow property) 
@@ -310,6 +301,15 @@
         (If you want, you can also add extra columns)
     -->
 
+    <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked. (Requires DOM manipulation)  
+
+        ## EXTRA CSS CHALLENGE ##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+
     <!-- table -->
     <section>
       <div class="container-sm">
@@ -319,23 +319,40 @@
               <th scope="col">#</th>
               <th scope="col">Title</th>
               <th scope="col">Track duration</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
+
               <td>You rock baby!!</td>
               <td>1.00 min</td>
+              <td>
+                <button type="button" class="btn btn-secondary btn-sm bg-dark">
+                  Delete Track
+                </button>
+              </td>
             </tr>
             <tr>
               <th scope="row">2</th>
               <td>Yeah roll another one!!</td>
               <td>2.00min</td>
+              <td>
+                <button type="button" class="btn btn-secondary btn-sm bg-dark">
+                  Delete Track
+                </button>
+              </td>
             </tr>
             <tr>
               <th scope="row">3</th>
               <td>Let's goooo</td>
               <td>.30 sec</td>
+              <td>
+                <button type="button" class="btn btn-secondary btn-sm bg-dark">
+                  Delete Track
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
