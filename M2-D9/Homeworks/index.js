@@ -42,17 +42,12 @@
 // btn3.addEventListener('click', () => {
 //   tr3.classList.add('d-none')
 // })
+
 // const deleteRow = () => {
 //   const parent = document
 //     .querySelector('.btn-sm')
 //     .parentElement.parentElement.classList.add('d-none')
 //   console.log(parent)
-// }
-
-// const removeRow = () => {
-//   const parent = document
-//     .querySelector('.btn-sm')
-//     .parentElement.parentElement.classList.add('d-none')
 // }
 
 // const btns = () => {
@@ -64,9 +59,26 @@
 const deleteRow = () => {
   const btns = document.querySelectorAll('.btn-sm')
   for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', function (event) {
-      event.target.parentElement.parentElement.classList.add('d-none')
+    btns[i].addEventListener('click', event => {
+      event.target.parentElement.parentElement.classList.add('fade-out')
+      setTimeout(() => {
+        event.target.parentElement.parentElement.classList.add('d-none')
+      }, 500)
     })
   }
 }
 deleteRow()
+
+const addTrack = () => {
+  const tBody = (document.querySelector('tbody').innerHTML += ` 
+            <tr>
+              <th scope="row">3</th>
+              <td>Let's goooo</td>
+              <td>.30 sec</td>
+              <td>
+                <button type="button" class="btn btn-secondary btn-sm bg-dark">
+                  Delete Track
+                </button>
+              </td>
+            </tr>`)
+}

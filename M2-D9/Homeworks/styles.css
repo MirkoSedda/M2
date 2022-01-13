@@ -107,7 +107,7 @@ footer a {
 /* Animations */
 
 .fade-in {
-  animation: fadeIn 3s;
+  animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -116,5 +116,17 @@ footer a {
   }
   100% {
     opacity: 1;
+  }
+}
+.fade-out {
+  animation: fadeOut 0.5s both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
