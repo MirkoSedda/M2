@@ -1,8 +1,3 @@
-<!-- EXERCISE 2
-        Use a Bootstrap Card to contain every album in the favorite list you previously created.
-        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
-    -->
-
 <!-- EXERCISE 3
         Foreach album in the favorite list, place a badge on the top-left corner of the album with the genre of the music
     -->
@@ -87,11 +82,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body
-    class="fade-in"
-    data-new-gr-c-s-check-loaded="14.1000.0"
-    data-gr-ext-installed=""
-  >
+  <body data-new-gr-c-s-check-loaded="14.1000.0" data-gr-ext-installed="">
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -143,7 +134,7 @@
         Make it appear with a fade-in animation effect when the page loads.
     -->
 
-    <section class="jumbotron">
+    <section class="jumbotron fade-in">
       <div class="container">
         <div class="bg-dark p-5 rounded-lg m-3">
           <img
@@ -168,83 +159,143 @@
       </div>
     </section>
 
+    <!-- EXERCISE 2
+        Use a Bootstrap Card to contain every album in the favorite list you previously created.
+        Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
+    -->
+
     <section id="fav-albums">
       <div class="container">
         <div class="row py-5">
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img
-                src="assets/black-holes-and-revelations.jpg"
-                class="img-fluid"
-              />
-              <h4 class="album-title">Black Holes and Revelations</h4>
-              <span class="album-artist">Muse</span>
-              <span class="album-genre">Rock</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img src="assets/end-of-aquarius.jpg" class="img-fluid" />
-              <h4 class="album-title">End of Aquarius</h4>
-              <span class="album-artist">Droid Bishop</span>
-
-              <span class="album-genre">Synthwave</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img src="assets/II.jpeg" class="img-fluid" />
-              <h4 class="album-title">Crystal Castles II</h4>
-              <span class="album-artist">Crystal Castles</span>
-
-              <span class="album-genre">Power Electronics</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img src="assets//it-takes-a-thief.jpeg" class="img-fluid" />
-              <h4 class="album-title">It Takes A Thief</h4>
-              <span class="album-artist">Thievery Corporation</span>
-              <span class="album-genre">Acid Jazz</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img
-                src="assets/black-holes-and-revelations.jpg"
-                class="img-fluid"
-              />
-              <h4 class="album-title">Black Holes and Revelations</h4>
-              <span class="album-artist">Muse</span>
-              <span class="album-genre">Rock</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img src="assets/end-of-aquarius.jpg" class="img-fluid" />
-              <h4 class="album-title">End of Aquarius</h4>
-              <span class="album-artist">Droid Bishop</span>
-
-              <span class="album-genre">Synthwave</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img src="assets/II.jpeg" class="img-fluid" />
-              <h4 class="album-title">Crystal Castles II</h4>
-              <span class="album-artist">Crystal Castles</span>
-
-              <span class="album-genre">Power Electronics</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
           <div class="col-6 col-md-4 col-lg-3">
             <div class="album-container">
-              <img src="assets//it-takes-a-thief.jpeg" class="img-fluid" />
-              <h4 class="album-title">It Takes A Thief</h4>
-              <span class="album-artist">Thievery Corporation</span>
-              <span class="album-genre">Acid Jazz</span>
+              <div class="card bg-dark border border-dark" style="width: 18rem">
+                <img
+                  src="assets/black-holes-and-revelations.jpg"
+                  class="img-fluid"
+                />
+                <div class="card-body">
+                  <h4 class="album-title">Black Holes and Revelations</h4>
+                  <span class="card-text album-artist">Muse</span>
+                  <span class="card-text album-genre">Rock</span>
+                </div>
+              </div>
             </div>
           </div>
+          <!--  -->
         </div>
       </div>
     </section>
