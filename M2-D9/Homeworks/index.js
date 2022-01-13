@@ -56,19 +56,6 @@
 //     buttons[i].addEventListener('click', removeRow)
 //   }
 // }
-const deleteRow = () => {
-  const btns = document.querySelectorAll('.btn-sm')
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', event => {
-      event.target.parentElement.parentElement.classList.add('fade-out')
-      setTimeout(() => {
-        event.target.parentElement.parentElement.classList.add('d-none')
-      }, 500)
-    })
-  }
-}
-deleteRow()
-
 const addTrack = () => {
   const tBody = (document.querySelector('tbody').innerHTML += ` 
             <tr>
@@ -82,3 +69,16 @@ const addTrack = () => {
               </td>
             </tr>`)
 }
+
+const deleteRow = () => {
+  const btns = document.querySelectorAll('.btn-sm')
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', event => {
+      event.target.parentElement.parentElement.classList.add('fade-out')
+      setTimeout(() => {
+        event.target.parentElement.parentElement.classList.add('d-none')
+      }, 500)
+    })
+  }
+}
+deleteRow()
