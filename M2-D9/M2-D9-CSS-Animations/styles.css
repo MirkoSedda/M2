@@ -1,0 +1,376 @@
+:root {
+  --prime-color: #01a3db;
+}
+
+body {
+  background-color: #0f171e;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fade-in {
+  animation: fadeIn 3s 2s both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#toaster {
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  z-index: 9;
+  border-radius: 6px;
+  box-shadow: 0 6px 40px rgb(0 0 0 / 0.3);
+  animation: gradientSlide 4s ease infinite;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+#toaster.show {
+  opacity: 1;
+}
+
+.bg-strive-video {
+  background-color: #0f171e;
+  background-image: -webkit-linear-gradient(
+    top,
+    #1b2530,
+    rgba(27, 37, 48, 0.85)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    #1b2530 0,
+    rgba(27, 37, 48, 0.85) 100%
+  );
+  background-image: linear-gradient(180deg, #1b2530 0, rgba(27, 37, 48, 0.85));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF1B2530",endColorstr="#D91B2530",GradientType=0);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+  font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-nav .nav-link {
+  margin: 0 8px;
+  padding: 0;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  background-color: #252e39;
+  padding: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #9ba7b5; /* changed later to have a highlight effect upon hovering */
+  border-bottom: 1px solid #333c47;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.dropdown-menu .last {
+  border-bottom: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: white; /* added this later for getting the aformentioned effect */
+  background-color: #303a46;
+}
+
+.text-truncate {
+  vertical-align: middle;
+  max-width: 62px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.glass {
+  opacity: 0.6;
+}
+
+.dropdown .dropdown-toggle {
+  color: rgb(194, 194, 194);
+}
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.prime-logo {
+  position: relative;
+  bottom: 2px;
+}
+.prime-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.prime-title {
+  color: var(--prime-color);
+  font-size: 0.9rem;
+}
+
+.infos-container {
+  background: linear-gradient(rgba(27, 37, 48, 0), #1b2530 48px);
+  position: absolute;
+  z-index: 10;
+  transform: translateY(-56px);
+
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+
+  opacity: 0;
+  transition: opacity 0.15s ease-out, transform 0.3s ease-out;
+
+  overflow: hidden;
+}
+
+.infos-content {
+  /* padding: 48px 16px 30px; */
+  padding: 48px 24px 30px;
+
+  /* transition: padding 0.3s ease-in-out 0.05s; */
+}
+
+.infos-content > div > h6 {
+  transform: translateX(-48px);
+  transition: transform 0.3s ease 0.15s;
+}
+
+.play-btn:not(:hover) {
+  background: black;
+}
+
+.play-btn {
+  width: 40px;
+  height: 40px;
+  /* background-color: black; */
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+
+  opacity: 0;
+  transform: translateX(-170%);
+  transition: transform 0.3s ease 0.1s, opacity 0.3s ease-in 0.2s;
+}
+
+.play-btn::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 1px;
+  margin: auto;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.play-btn:hover {
+  border: none;
+  animation: gradientSlide 4s ease infinite;
+}
+
+.plus-btn {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transform: translateX(50px) rotate(160deg);
+  transition: transform 0.3s ease-in 0.15s;
+}
+
+.plus-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: white;
+  margin: auto;
+}
+
+.plus-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: white;
+  margin: auto;
+}
+
+.infos-content .prime-title,
+.infos-content h6:nth-of-type(2),
+.infos-content p,
+.infos-content .movie-footer {
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+}
+
+.infos-content .prime-title {
+  transition-delay: 0.15s;
+}
+
+.infos-content h6:nth-of-type(2),
+.infos-content p {
+  transition-delay: 0.3s;
+}
+
+.infos-content .movie-footer {
+  transition-delay: 0.45s;
+}
+
+.infos-content h6 {
+  font-weight: 700;
+}
+
+.infos-content h6:not(.prime-title) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.35rem;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.infos-content p {
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.infos-content p,
+.infos-content .movie-footer span {
+  font-size: 0.8rem;
+}
+
+.strive-card {
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.strive-card:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.strive-card:hover .infos-container {
+  transform: translateY(-48px);
+  opacity: 1;
+}
+
+.strive-card:hover .infos-content {
+  padding: 48px 24px 30px;
+}
+
+.strive-card:hover .infos-content h6,
+.strive-card:hover .infos-content p,
+.strive-card:hover .infos-content .movie-footer {
+  opacity: 1;
+}
+
+.strive-card:hover .play-btn {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.strive-card:hover .infos-content > div > h6 {
+  transform: translateX(0);
+}
+.strive-card:hover .plus-btn {
+  transform: translateX(0) rotate(0deg);
+}
+
+h5 {
+  transition: color 1s ease-out;
+}
+
+.color {
+  color: var(--prime-color);
+}
+
+/* ADDED AFTER THE M2-D4 LESSON */
+a {
+  color: #01a3db;
+}
+
+a:hover {
+  color: #14b5eb;
+}
+
+.gradient {
+  background: linear-gradient(270deg, green 0%, yellow 100%);
+  background-size: 400%;
+}
+
+@keyframes gradientSlide {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+footer .footer-logo {
+  display: inline-block;
+  width: 120px;
+  height: 48px;
+  background-image: url("../logo/strivevideo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+footer ul:last-of-type {
+  color: rgba(255, 255, 255, 0.45);
+}
