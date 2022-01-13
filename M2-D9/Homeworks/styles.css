@@ -97,6 +97,13 @@ footer a {
   min-height: 93vh;
 }
 
+.badge {
+  position: absolute;
+  border-top-left-radius: 0px !important;
+  top: -1px;
+  left: -1px;
+}
+
 /* Animations */
 
 .fade-in {
