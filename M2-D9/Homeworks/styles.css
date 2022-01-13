@@ -104,8 +104,12 @@ footer a {
   left: -1px;
 }
 
+.opacity {
+  opacity: 0;
+}
+
 tr:hover .btn-sm {
-  display: block !important;
+  opacity: 1;
 }
 
 /* Animations */
@@ -133,4 +137,11 @@ tr:hover .btn-sm {
   100% {
     opacity: 0;
   }
+}
+
+.add-row {
+  transition: box-shadow ease-in-out 0.2s;
+}
+.add-row:hover {
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
