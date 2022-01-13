@@ -1,21 +1,3 @@
-<!--
-ASSIGNMENT RULES
-- The project must be pushed to a new repository and linked in EduFlow by the end of the day.
-- You can google / use StackOverflow BUT we suggest you to use just the material provided and documentation.
-- To test the page, open it with your browser and inspect it with developer tools / device emulator.
-- Use Bootstrap4.6 classes to create the page.
-- Use containers, rows and cols in order to achieve a great responsive layout.
-
-NOTE:
-Most of the requirements in this exercises reference a bootstrap's functionality or component. 
-Make sure you check the documentation before creating anything custom.
--->
-
-<!-- EXERCISE 1
-        Create a Jumbotron section with a quick explanation / image of the website.
-        Make it appear with a fade-in animation effect when the page loads.
-    -->
-
 <!-- EXERCISE 2
         Use a Bootstrap Card to contain every album in the favorite list you previously created.
         Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
@@ -151,6 +133,36 @@ Make sure you check the documentation before creating anything custom.
         </div>
       </div>
     </nav>
+
+    <!-- EXERCISE 1
+        Create a Jumbotron section with a quick explanation / image of the website.
+        Make it appear with a fade-in animation effect when the page loads.
+    -->
+
+    <section class="jumbotron">
+      <div class="container">
+        <div class="bg-dark p-5 rounded-lg m-3">
+          <img
+            src="https://via.placeholder.com/750x200"
+            class="img-fluid"
+            alt="simple placeholder image"
+          />
+          <h1 class="fs-1">Music website!</h1>
+          <p class="lead">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+          <hr class="my-4" />
+          <p>
+            It uses utility classes for typography and spacing to space content
+            out within the larger container.
+          </p>
+          <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </section>
 
     <section id="fav-albums">
       <div class="container">
